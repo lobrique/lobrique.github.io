@@ -1,3 +1,19 @@
-    .DS_Store
-    ../.DS_Store
-    **/._.DS_Store
+# Ignore system files
+.DS_Store
+../.DS_Store
+**/._.DS_Store
+Thumbs.db
+
+# Ignore node or dependency folders (if you ever use them later)
+node_modules/
+vendor/
+
+# Ignore logs
+*.log
+
+# Ignore temporary files
+*.tmp
+*.swp
+
+# Ignore other project repos (e.g., another clone inside this folder)
+Portfolio/

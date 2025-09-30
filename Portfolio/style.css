@@ -3,9 +3,20 @@
    ============== */
 body {
   font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #344e41;
+}
+
+a {
+  text-decoration: none;
+  color: #c2bead;
+}
+
+h1,
+h2,
+h3,
+p {
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
 
 /* ==============
@@ -14,28 +25,86 @@ body {
 .main-nav {
   display: flex;
   justify-content: flex-end;
-  gap: 20px;
-  background-color: #e0b8b8;
-  text-decoration: none;
-  padding: 10px;
+  gap: 40px;
+  padding: 10px 50px 10px 0px;
   font-size: 16px;
+  font-family: monospace;
 }
+
 /* ==============
    Hero Section 
    ============== */
 .hero {
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Space between left and right */
+  align-items: center; /* Align items vertically */
+  margin-top: 50px;
+}
+
+.hero-left {
+  flex: 1;
+  margin: 0px 0px 0px 20px;
+  padding: 0;
+}
+
+.hero-right {
+  flex: 1;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+}
+
+.hero-title {
+  font-size: 48px;
+  color: #e5e3dc;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  font-family: monospace;
+  color: #c2bead;
+}
+
+.hero-text {
+  font-size: 24px;
+  color: #c2bead;
   padding: 0;
   margin: 0;
 }
 
 .text-image {
+  max-width: 80%;
+  height: auto;
+}
+
+/* ==============
+   Section Columns 
+   ============== */
+.section.two-column {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 50px;
+  margin: 60px 0; /* spacing between sections */
+}
+
+.section.two-column .text {
+  flex: 1;
+  padding: 18px;
+  color: #c2bead;
+  font-size: 18px;
+}
+
+.section.two-column .blank {
+  flex: 1;
+}
+
+.text h3 {
+  flex: 1;
+  color: #e5e3dc;
+  font-size: 24px;
 }
 
 /* ==============
@@ -52,6 +121,7 @@ body {
   grid-template-columns: auto auto auto;
   background-color: dodgerblue;
   padding: 10px;
+  margin: 0;
 }
 
 /* ==============
@@ -176,5 +246,7 @@ body {
  Darker Green - #3A5A40
  Dark Green - #588157
  Light Green - #A3B18A
- Non Green - #DAD7CD
+ Non Green Darkest - #C2BEAD
+ Non Green Dark - #DAD7CD
+ Non Green Light - #E5E3DC
 */
